@@ -1,0 +1,117 @@
+.sidebar {
+	min-height: 100vh;
+	display: inline-flex;
+	flex-direction: column;
+	justify-content: space-between;
+	background-color: #1E1F20;
+	padding: 10px 15px;
+   
+}
+.sidebar .top{
+    margin-top: 15px;
+    background: transparent;
+}
+.sidebar img {
+	width: 20px;
+}
+.sidebar .menu {
+	display: block;
+	margin-left: 10px;
+    mix-blend-mode: color-dodge;
+	cursor: pointer;
+}
+.menucon{
+position: relative;
+background-color: #131314;
+height: 35px;
+width: 35px;
+    left: 2.7px;
+    bottom: 27px;
+    object-fit: none;
+    mix-blend-mode: screen;
+    border-radius: 50px;
+    transition: 0.3s;
+}
+.menucon:hover {
+    background-color: #1E1F20;
+    box-shadow:  26px 26px 52px #0c0c0d,
+    -26px -26px 52px #303233;
+}
+.sidebar .new-chat{
+    margin-top: 80px;
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px 15px;
+    background-color: #0a0a0a;
+    border-radius: 50px;
+    font-size: 14px;
+    color: grey;
+    cursor: pointer;
+    transition: margin-top 0.3s ease box; /* Transition for margin-top */
+}
+
+.sidebar .new-chat {
+    margin-top: 50px;
+    mix-blend-mode: screen;
+    transition: box-shadow 0.3s ease-in-out;
+}
+
+.sidebar .new-chat>p {
+background: transparent;
+
+}
+
+.sidebar .new-chat:hover {
+    box-shadow:  26px 26px 52px #0c0c0d,
+    -26px -26px 52px #303233;
+}
+.sidebar .recent{
+    display: flex;
+    flex-direction: column;
+    animation: fadeIn 2.0s;
+    gap: 10px;
+    background: transparent;
+}
+.sidebar .recent-title{
+    margin-top: 30px;
+    background: transparent;
+    color: grey;
+
+    margin-bottom: 20px;
+
+}
+.sidebar .recent-entry{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px;
+    padding-right: 40px;
+    border-radius: 50px;
+    color: grey;
+    cursor: pointer;
+    transition:background-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+
+}
+.sidebar .recent-entry:hover{
+box-shadow:  26px 26px 52px #0c0c0d,
+             -26px -26px 52px #303233;
+}
+.sidebar .bottom{
+
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    background: transparent;
+}
+.sidebar .bottom-item{
+    padding-right: 10px;
+    overflow-x: hidden;
+    cursor: pointer;
+}
+
+@media (max-width:600px){
+    .sidebar{
+        display: none;
+    }
+}
